@@ -1,0 +1,71 @@
+1 - Inserir conta
+  	1 - Fazer login:
+  		email: braitiner@braitiner.com
+  		senha: 123456
+  	2 - Contas >> Adicionar >> Nome: Conta nova >> salvar
+  	3 - validar insersão
+  	
+ 2 - Alterar conta
+  	1 - Contas >> Listar >> Nome: Conta nova >> clicar alterar >> nome: Conta alterada >> clicar salvar
+  	2 - validar alteração
+ 
+ 3 - Inserir conta com mesmo nome
+  	1 - Contas >> Adicionar >> Nome: Conta alterada >> salvar
+  	2 - Validar mensagem de erro
+ 
+ 4 - Inserir movimentação
+ 	1 - Criar movimentação 
+ 		Tipo movimentação: Receita 
+ 		datas da movimentação: 18/06/2022
+		data do pagamento: 18/06/2022
+		descrição: reveita alugueu
+		interessado: braitiner
+		valor: 900
+		Conta: Conta alterada
+		Situação: Pago
+		Botão salvar
+	2 - Validar mensagem "Movimentação adicionada com sucesso"
+	
+5 - Campos obrigatorios da Movimentação
+	1 - Validar regras de negocio:
+		* Data da Movimentação é obrigatório
+	    * Data do pagamento é obrigatório
+		* Descrição é obrigatório
+		* Interessado é obrigatório
+		* Valor é obrigatório
+	 	* Valor deve ser um número
+		* Conta é obrigatório
+		
+6 - Inserir movimentação data futura
+ 	1 - Criar movimentação 
+ 		Tipo movimentação: Receita 
+ 		datas da movimentação: 18/07/2022
+		data do pagamento: 18/07/2022
+		descrição: reveita alugueu
+		interessado: braitiner
+		valor: 900
+		Conta: Conta alterada
+		Situação: Pendentes
+		Botão salvar
+	2 - Validar mensagem "Data da Movimentação deve ser menor ou igual à data atual"
+	
+7 - Remover movimentação
+	1 - Resumo Mensal: Junho 2022 Buscar >> Remover
+	2 - Validar mensagem "Movimentação removida com sucesso!"
+
+8 - Remover conta com Movimentação
+	1 - Contas >> Listar >> linha conta Alterada >> remover
+	2 - Validar mensagem "Conta em uso na movimentações"
+
+9 - Saldo das contas
+	1 - Home >> conta alterada saldo 1000,00 
+
+10 - Resumo Mensal.
+
+	
+		
+
+
+	
+	
+	
